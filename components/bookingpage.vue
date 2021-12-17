@@ -3,12 +3,13 @@
     <v-card
       v-for="thing in things"
       :key="thing"
-      height="64em"
+      height="65em"
       width="21em"
-      class="pt-1"
+    
       style="background: linear-gradient(#009933 20%, #333399 90%)"
     >
-      <v-card class="ml-2 mt-1 pa-3" height="63em" width="20em">
+      <v-container>
+        <v-card class="  pa-3" height="63em" width="20em">
         <p class="pa-5" style="font-weight: bold; font-size: 18px">
           {{thing.title}}
         </p>
@@ -25,15 +26,16 @@
         <p><span style="color: #fba22a">{{thing.message}}</span></p>
         <v-text-field height="9em" outlined label="MESSAGE"> </v-text-field>
         <v-btn
-          class="white--text ml-1"
+          class="white--text "
           height="45"
-          width="290"
+          width="250"
           style="
             background: linear-gradient(to right, #009933 20%, #333399 90%);
           "
           >Request Booking</v-btn
         >
       </v-card>
+      </v-container>
     </v-card>
     <v-card class="mt-7" height="25em" width="22em">
       <v-img src="ad.png" height="25em"></v-img>

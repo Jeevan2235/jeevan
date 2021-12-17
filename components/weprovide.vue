@@ -11,7 +11,7 @@
 
       <v-btn tile style="margin-top: -45px" height="4em" width="9em"> </v-btn>
     </v-row>
-    <v-row>
+    <v-row cols="12" md="4" sm="6">
       <v-card
         v-for="link in links"
         :key="link"

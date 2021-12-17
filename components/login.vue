@@ -1,12 +1,5 @@
-<template >
+<template>
   <div>
-     <v-text-field class="mx-10" outlined>
-        <template v-slot:label>
-          <v-icon style="vertical-align: middle"> mdi-account </v-icon>
-          Username
-        </template>
-      </v-text-field>
-
       <v-text-field class="mx-10" outlined>
         <template v-slot:label>
           <v-icon style="vertical-align: middle"> mdi-email-outline </v-icon>
@@ -24,16 +17,13 @@
           <v-divider vertical></v-divider>
         </strong>
       </v-text-field>
-      <v-checkbox class="pl-10" v-model="checkbox" label="I agree to the Terms"
-        >on</v-checkbox
-      >
       <v-card-actions>
           <v-btn
           class="mb-5 mx-auto white--text"
           width="40em"
           color="#21b55f"
           height="3.5em"
-          >Register</v-btn
+          >LogIn</v-btn
           >
       </v-card-actions>
   </div>
@@ -41,13 +31,10 @@
 
 <script>
 export default {
-  data() {
-    return {
-      items: [{ icon: "mdi-view-dashboard" }],
-    };
-  },
-};
+
+}
 </script>
 
-<style >
+<style>
+
 </style>

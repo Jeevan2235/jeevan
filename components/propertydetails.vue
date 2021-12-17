@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div v-for="link in links" :key="link" style="padding-right:280px">
+    <div v-for="link in links" :key="link">
       <h1 class="mt-8">Property Details-</h1>
       <p class="mt-3">
         <span style="font-weight: bold; font-size: 20px">Address & Area :</span>

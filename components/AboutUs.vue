@@ -15,39 +15,30 @@
         WELCOME TO OUR HOUSE RENT COMPANY
       </h3>
       <v-row class="mt-10">
-        <v-col cols="1">
-          <p class="font-weight-bold my-16 ml-10">About <br />Company</p>
-          <p class="font-weight-bold my-16 ml-10">Terms& <br />Conditions</p>
-          <p class="font-weight-bold my-16 ml-10">Our <br />speciality</p>
-          <p class="font-weight-bold my-16 ml-10">
+        <v-col cols="12" md="1" sd="6">
+          <p class="font-weight-bold my-16">About <br />Company</p>
+          <p class="font-weight-bold my-16">Terms& <br />Conditions</p>
+          <p class="font-weight-bold my-16">Our <br />speciality</p>
+          <p class="font-weight-bold my-16">
             Our <br />
             speciality
           </p>
         </v-col>
 
-        <v-col>
-          <div>
-            <v-timeline align-top dense>
-              <v-timeline-item color="orange" small>
-                <div v-for="thing in things" :key="thing">
-                  <v-row>
-                    <v-col>
-                      <p>
-                        {{ thing.text }}
-                      </p>
-                      <p v-for="link in links" :key="link">
-                        {{ link }}
-                      </p>
-                    </v-col>
-                    <v-col>
-                      <v-img :src="thing.img" height="350px" width="450px">
-                      </v-img>
-                    </v-col>
-                  </v-row>
-                </div>
-              </v-timeline-item>
-            </v-timeline>
-          </div>
+        <v-col cols="12" md="6" sd="6">
+          <v-timeline align-top dense v-for="thing in things" :key="thing">
+            <v-timeline-item color="orange" small>
+              <p>
+                {{ thing.text }}
+              </p>
+              <p v-for="link in links" :key="link">
+                {{ link }}
+              </p>
+            </v-timeline-item>
+          </v-timeline>
+        </v-col>
+        <v-col v-for="thing in things" :key="thing" cols="12" md="5" sd="6">
+          <v-img :src="thing.img" height="350px" width="450px"> </v-img>
         </v-col>
       </v-row>
     </v-container>
@@ -76,5 +67,4 @@ export default {
 };
 </script>
 
-<style>
-</style>
+<style></style>

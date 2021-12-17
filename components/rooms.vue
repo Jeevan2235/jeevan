@@ -1,5 +1,5 @@
 <template>
-  <div class="ml-16">
+  <div>
     <v-container>
       <h1
         class="text-center"

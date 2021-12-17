@@ -9,16 +9,8 @@
       ></v-img>
     </v-card>
     <v-row>
-      <v-card class="d-flex justify-space-between mb-6 mt-8 ml-1" flat tile>
-        <v-card
-          v-for="link in links"
-          :key="link"
-          class="pa-2"
-          elevation="0"
-          tile
-        >
-          <v-img :src="link.img1" height="6em" width="7.5em"> </v-img>
-        </v-card>
+      <v-card v-for="link in links" :key="link" class="pa-2 mt-5" elevation="0" tile>
+        <v-img :src="link.img1" height="6em" width="7em"> </v-img>
       </v-card>
     </v-row>
     <v-row>

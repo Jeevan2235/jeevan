@@ -12,23 +12,23 @@
     <h2 class="text-center " style="color: #0e385d">Search your House</h2>
     <div>
       <v-container>
-        <v-row class="mt-5">
-          <v-col>
+        <v-row >
+          <v-col cols="12" md="3" sm="4">
             <p class="pl-2">LIVING AREA</p>
             <v-text-field
             background-color="white"
             elevation="0"
               outlined
               label="Where do you want to live?"
-              class="ml-2 d-flex"
+              
               style="font-size: 12px; "
             ></v-text-field>
           </v-col>
 
-          <v-col>
-            <p class="pl-10">TYPE</p>
+          <v-col cols="12" md="2" sm="4">
+            <p >TYPE</p>
             <v-select
-            class="pl-10"
+            
             background-color="white"
           :items="items"
           label="Apartments"
@@ -36,32 +36,33 @@
         ></v-select>
           </v-col>
 
-          <v-col>
-            <p class="ml-16">PRICE</p>
+          <v-col cols="12" md="2" sm="4">
+            <p >PRICE</p>
             <v-text-field
             background-color="white"
               outlined
               label="Min"
-              class="ml-16 d-flex"
+              
             ></v-text-field>
           </v-col>
 
-          <v-col>
-            <p class="ml-16">MALE</p>
+          <v-col cols="12" md="2" sm="4">
+            <p >MALE</p>
             <v-text-field
             background-color="white"
               outlined
               label="Max"
-              class="ml-16 d-flex"
+              
             ></v-text-field>
           </v-col>
 
-          <v-col>
-            <p class="ml-16">FOR</p>
+          <v-col cols="12" md="3" sm="4">
+            <p >FOR</p>
             <v-select
             background-color="white"
           :items="items"
           label="Family"
+          
            outlined
           
         ></v-select>

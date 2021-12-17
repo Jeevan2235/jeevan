@@ -55,7 +55,7 @@
     <maps />
       <h1 class=" mt-16 text-center" style="color: #0e385d; font-size: 60px;font-family: Playfair Display, serif;">Our Blog Post</h1>
       <h4 class="text-center" style="color: #0e385d;">OUR NEWS FEED</h4>
-    <div>
+    
     <blog />
     <div class="text-center">
         <v-btn
@@ -68,7 +68,7 @@
           >Show All</v-btn
         >
       </div>
-    </div>
+    
     <div>
       <v-footer>
         <v-container>
